@@ -9,7 +9,7 @@ export default createGlobalStyle`
 }
 
 body {
-  background: #F0F0F5;
+  background: #222222;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -18,6 +18,7 @@ body, input, button{
 }
 
 #root{
+  height: 100vh;
   max-width: 960px;
   margin: 0 auto;
   padding: 40px 20px;
