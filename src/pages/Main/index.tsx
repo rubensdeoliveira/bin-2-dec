@@ -1,9 +1,9 @@
-import React, { useCallback, useState, useRef } from 'react'
+import React, { useCallback, useState } from 'react'
 
 import { GoFileBinary } from 'react-icons/go'
-import { TiSortNumerically, TiMediaFastForward } from 'react-icons/ti'
+import { TiSortNumerically } from 'react-icons/ti'
 
-import { Container } from './styles'
+import { Container, Title } from './styles'
 
 import Input from '../../components/Input'
 
@@ -44,11 +44,13 @@ const Main: React.FC = () => {
       decimalValue += result
     }
 
-    setDecimal(decimalValue.toString())
+    binaryValue ? setDecimal(decimalValue.toString()) : setDecimal('')
   }, [])
 
   return (
     <Container>
+      <Title>Binary to Decimal</Title>
+
       <Input
         onChange={(event) => handleDecimalInputChange(event)}
         placeholder="Valor em decimal"
