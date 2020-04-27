@@ -3,7 +3,7 @@ import React, { useCallback, useState } from 'react'
 import { GoFileBinary } from 'react-icons/go'
 import { TiSortNumerically } from 'react-icons/ti'
 
-import { Container, Title } from './styles'
+import { Container, Title, Error } from './styles'
 
 import Input from '../../components/Input'
 
@@ -11,10 +11,12 @@ const Main: React.FC = () => {
   const [decimal, setDecimal] = useState('')
   const [binary, setBinary] = useState('')
   const [hasError] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleDecimalInputChange = useCallback((event) => {
     let decimalValue = event.target.value
 
+    setErrorMessage('')
     setDecimal(decimalValue)
 
     const binaryArray = []
@@ -32,6 +34,12 @@ const Main: React.FC = () => {
   const handleBinaryInputChange = useCallback((event) => {
     const binaryValue = event.target.value
 
+    if (binaryValue.match(/^[0-1]+$/g) === null) {
+      setErrorMessage('Permitido somente valores 0 ou 1')
+      return
+    }
+
+    setErrorMessage('')
     setBinary(binaryValue)
 
     let decimalValue = 0
@@ -67,6 +75,8 @@ const Main: React.FC = () => {
         hasError={hasError}
         value={binary}
       />
+
+      {errorMessage && <Error>{errorMessage}</Error>}
     </Container>
   )
 }

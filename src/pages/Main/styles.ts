@@ -16,3 +16,9 @@ export const Title = styled.h1`
   color: #20c997;
   margin-bottom: 50px;
 `
+
+export const Error = styled.span`
+  color: #dc3545;
+  margin-bottom: 50px;
+  margin-top: 15px;
+`
