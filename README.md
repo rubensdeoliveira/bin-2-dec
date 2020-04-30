@@ -1,49 +1,39 @@
-<h3 align="center">
-  Challenge: Bin2Dec
-</h3>
+<h1 align="center">
+<br>
+Bin2Dec
+</h1>
+
+<p align="center">Project that transform decimal value to binary and binary to decimal.</p>
 
 <p align="center">
-  <a href="#pencil-about-challenge">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">License</a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
 </p>
 
-## :pencil: About Challenge
+<div>
+  <img src="repo/imgs/image.png" alt="demo" height="425">
+</div>
 
-Binary is the number system all digital computers are based on.
-Therefore it's important for developers to understand binary, or base 2,
-mathematics. The purpose of Bin2Dec is to provide practice and
-understanding of how binary calculations.
+<hr />
 
-Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's
-and 1's, in any sequence and then displays its decimal equivalent.
+## Features
 
-This challenge requires that the developer implementing it follow these
-constraints:
+- Convert binary to decimal.
+- Convert decimal to binary.
 
-- Arrays may not be used to contain the binary digits entered by the user
-- Determining the decimal equivalent of a particular binary digit in the
-  sequence must be calculated using a single mathematical function, for
-  example the natural logarithm. It's up to you to figure out which function
-  to use.
+- ⚛️ **React Js** — A JavaScript library for building user interfaces
 
-## Screens
+## Getting started
 
-![Screen](repo/imgs/binarytodecimal.PNG)
+- Clone project > enter the project folder
+- run `yarn`
+- run `yarn start`
 
-## User Stories
+## License
 
-- [x] ~User can enter up to 8 binary digits in one input field~
-- [x] ~User must be notified if anything other than a 0 or 1 was entered~
-- [x] ~User views the results in a single output field containing the decimal (base 10) equivalent of the the binary number that was entered~
-
-## Bonus features
-
-- [x] ~User can enter a variable number of binary digits~
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
 
 ---
 
-Made by me 👨🏻‍💻
+Created with passion by me 👨🏻‍💻
